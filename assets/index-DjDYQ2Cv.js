@@ -1562,7 +1562,7 @@ offset = ${a}
 `,I+=`    ${l},          # RDI value (${l})
 `,I+=`    ${(V=pn.find(B=>B.id==="pop_rax"))==null?void 0:V.address},   # pop rax; ret
 `,I+=`    ${p},          # RAX value (for RSI) (${p})
-`,I+=`    ${(N=pn.find(B=>B.id==="mov_rsi_rax"))==null?void 0:N.address}, # mov rsi, rax; ret
+`,I+=`    ${(N=pn.find(B=>B.id==="mov_rsi_rax"))==null?void 0:N.address}, # mov rax, rsi; ret
 `,I+=`    ${(U=pn.find(B=>B.id==="pop_rdx"))==null?void 0:U.address},   # pop rdx; ret
 `,I+=`    ${d},          # RDX value (${d})
 `,I+=`    ${(D=pn.find(B=>B.id==="call_surprise"))==null?void 0:D.address}  # call surprise_for_you
