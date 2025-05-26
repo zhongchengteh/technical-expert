@@ -1506,7 +1506,7 @@ offset = ${o||"# (select offset in Step 2)"}
     ${i||"# (select RDI in Step 3)"},
 `),g.includes("pop_rax")&&Me.find(W=>W.id==="pop_rax")&&(N+=`    ${($=Me.find(W=>W.id==="pop_rax"))==null?void 0:$.address},   # pop rax; ret
     ${u||"# (select RSI in Step 3)"}, # for RSI
-`),g.includes("mov_rsi_rax")&&Me.find(W=>W.id==="mov_rsi_rax")&&(N+=`    ${(H=Me.find(W=>W.id==="mov_rsi_rax"))==null?void 0:H.address}, # mov rsi, rax; ret
+`),g.includes("mov_rsi_rax")&&Me.find(W=>W.id==="mov_rsi_rax")&&(N+=`    ${(H=Me.find(W=>W.id==="mov_rsi_rax"))==null?void 0:H.address}, # mov rax, rsi; ret
 `),g.includes("pop_rdx")&&Me.find(W=>W.id==="pop_rdx")&&(N+=`    ${(Y=Me.find(W=>W.id==="pop_rdx"))==null?void 0:Y.address},   # pop rdx; ret
     ${f||"# (select RDX in Step 3)"},
 `),g.includes("call_surprise")&&Me.find(W=>W.id==="call_surprise")&&(N+=`    ${(se=Me.find(W=>W.id==="call_surprise"))==null?void 0:se.address}  # call surprise_for_you
